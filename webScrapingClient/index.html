@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon BestPrices</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <main>
+        <div id="top-bar">
+            <div id="logo">
+                <img src="./assets/images/amazon-logo.png" alt="logo-amazon" width="200">
+            </div>
+            <form id="searchBar">
+                <input type="text" name="keyword" id="searchInput" placeholder="Pesquise o produto que você desejar...">
+                <button type="submit" value="Pesquisar" id="searchButton">
+                    <img src="./assets/images/search.png" alt="buscar">
+                </button>
+            </form>
+            <p id="description">Procure os seus itens desejados na Amazon de forma simples e direta, sem pop-ups e comerciais excessivos. Compre melhor, economize mais.</p>
+        </div>
+
+        <div id="products-container">
+        </div>
+
+        <div id="error-container">
+            <h2 id="error-message">Opa! Algo deu errado, tente novamente mais tarde.</h2>
+            <p id="error-description"></p>
+        </div>
+    </main>
+
+        <footer>
+            <p>©2024. Alessandro de Lucena Siva</p>
+        </footer>
+        
+        <script src="components/productCard.js"></script>
+        <script src="components/productCardStructure.js"></script>
+        <script src="scripts/main.js"></script>
+</body>
+</html>

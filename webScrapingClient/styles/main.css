@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Geist-Regular;
+    src: url(../assets/fonts/Geist-Regular.otf);
+}
+
+@font-face {
+    font-family: Geist-Medium;
+    src: url(../assets/fonts/Geist-Medium.otf);
+}
+
+@font-face {
+    font-family: Geist-Bold;
+    src: url(../assets/fonts/Geist-Bold.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Geist-Regular;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+#top-bar{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    z-index: 10;
+    transition: width  0.5s, height 0.5s;
+}
+
+#logo{
+    margin-bottom: 60px;
+}
+
+#searchBar{
+    width: 100%;
+    display: flex;
+    background-color: #F0F0F0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding: 10px 12px;
+}
+
+#description{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: Geist-Medium;
+    color: #5f636b;
+    margin-top: 60px;
+}
+
+#searchInput {
+    padding: 10px 20px;
+    font-size: 14px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+#searchButton {
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+    font-size: 14px;
+    background-color: #F79B34;
+    cursor: pointer;
+}
+
+#searchButton img {
+    width: 20px;
+}
+
+#products-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 0px 16px;
+    margin: auto;
+    z-index: 0;
+}
+
+#error-container {
+    width: 100%;
+    height: 70vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-description {
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #F0F0F0;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+
+@media screen and (min-width: 640px ) {
+    #products-container {
+        gap: 32px;
+        padding: 0 32px;
+    }
+
+    #description {
+        width: 640px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #products-container {
+        width: 1280px;
+    }
+    #searchForm {
+        width: 768px;
+    }
+}
