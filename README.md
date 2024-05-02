@@ -1,6 +1,18 @@
 # Amazon Scraper ![Brazil](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/br.png "Brazil")
 (Scroll down to reach the english version of the Readme, still, this app is made to work with brazilian Amazon.)<br>
 Este aplicativo tem como propósito pesquisar uma determinada palavra no site da Amazon e retornar uma lista de produtos da mesma. Ele foi construído com Node, Express, JSDOM e Axios no backend e HTML, CSS e JavaScript no Frontend.
+### Backend
+Para carregar os produtos, o servidor carrega a página da Amazon realizando uma requisição com Axios para o site da mesma com o nome dos produtos que você digitar no frontend, lembrando que a Amazon tem mecanismos para evitar que bots como esse acessem seu site, então é possível que ocorra algum erro neste processo. Após isso, utilizando a biblioteca JSDOM para manipular a DOM da página HTML adquirida, a API cria uma lista de objetos alcançando os valores de nome, preço e mais informações do produto utilizando seletores CSS, conseguindo assim os valores de texto de cada uma das tags HTML.
+### Frontend
+Ao iniciar a página, o app possui uma interface simples com um campo de busca e um botão para executar a pesquisa.
+![image](https://github.com/Alex-Pru/AmazonScrapingProject/assets/142506709/2044f5dc-3e5b-4c97-aeab-4056cc986807)
+| --------------------- |
+Ao executar uma pesquisa, o app esconde os detalhes desnecessários e demonstra uma animação de carregamento para representar os produtos que virão.
+![image](https://github.com/Alex-Pru/AmazonScrapingProject/assets/142506709/6b639905-08d0-43f4-abfe-6bf61586fbc1)
+Caso a API esteja desligada, a página demonstrará o erro:
+![image](https://github.com/Alex-Pru/AmazonScrapingProject/assets/142506709/2ec36693-a018-4bf3-b813-6dd7edcdf592)
+Caso o programa funcione normalmente, a página demonstrará os produtos desejados:
+![image](https://github.com/Alex-Pru/AmazonScrapingProject/assets/142506709/9d50b337-f151-466b-bd94-e2fa3102a94d)
 
 # Como Rodar?
 ```
