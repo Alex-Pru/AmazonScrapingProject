@@ -1,5 +1,5 @@
 # Amazon Scraper ![Brazil](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/br.png "Brazil")
-(Scroll down to reach the english version)
+(Scroll down to reach the english version)<br>
 Este aplicativo tem como propósito pesquisar uma determinada palavra no site da Amazon e retornar uma lista de produtos da mesma. Ele foi construído com Node, Express, JSDOM e Axios no backend e HTML, CSS e JavaScript no Frontend.
 
 # Como Rodar?
