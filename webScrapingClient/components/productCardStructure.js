@@ -1,3 +1,5 @@
+
+//Reusable component that shows a loading preview animation of the product when searching and processing product informations.
 class ProductCardStructure extends HTMLElement{
     constructor(){
         super()

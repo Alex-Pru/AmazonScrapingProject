@@ -1,3 +1,5 @@
+
+// Reusable component that defines the structure that each product will receive.
 class ProductCard extends HTMLElement{
     constructor(){
     super()
