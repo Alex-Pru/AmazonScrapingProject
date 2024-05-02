@@ -26,7 +26,10 @@ const scrapePage = async (keyword) => {
         const imgUrl = item.querySelector('.s-image').src
         const productUrl = 'https://www.amazon.com.br' + item.querySelector('.a-link-normal').href
         const priceWhole = item.querySelector('.a-price-whole').textContent
-        const priceFraction = item.querySelector('.a-price-fraction')?.textContent | "00"
+        const priceFraction = item.querySelector('.a-price-fraction').textContent
+        if (priceFraction == "0"){
+            priceFraction = "0" + priceFraction
+        }
         offers.push(
             {
                 name,
